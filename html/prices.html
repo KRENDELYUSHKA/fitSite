@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHell</title>
+    <link rel="stylesheet" href="../scss/prices.css"></link>
+</head>
+<body>
+    <header class="header container">
+        <div class="circle circle_small"></div>
+        <div class="circle circle_big"></div>
+        <a href="../index.html" class="header-logo">
+            <img src="../img/logo.png" height="80px" width="150px">
+        </a>
+        <nav class="header-nav">
+            <a href="club.html" class="header-nav__link">Клубы</a>
+            <a href="schedule.html" class="header-nav__link">Расписание</a>
+            <a href="prices.html" class="header-nav__link">Цены</a>
+            <a href="team.html" class="header-nav__link">Команда</a>
+            <a href="about.html" class="header-nav__link">О нас</a>
+        </nav>
+        <div class="header-contacts">
+            <a href="#" class="header-contacts__link header-contacts__phone">8 800 123-45-67</a>
+            <a href="#" class="header-contacts__link header-contacts__callback" id="open_pop_up_phone">Заказать звонок</a>
+        </div>
+        <div class="pop_up_phone" id="pop_up_phone">
+            <div class="pop_up_phone_container">
+                <div class="pop_up_phone_body" id="pop_up_phone_body">
+                    <p>Заказать звонок</p>
+                    <form method="POST">
+                        <input type="text" placeholder="ФИО" name="fullName_us">
+                        <input type="text" placeholder="Телефон" name="phone_us">
+                        <button name="go_us">Заказать звонок</button>
+                    </form>
+                    <div class="pop_up_phone_close" id="pop_up_phone_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/prices.js"></script>
+    </header>
+    <section class="wrapper">
+        <h1>Цены на абонементы</h1>
+        <div class="team">
+            <div class="team_member">
+                <h3>Карта тренажерный зал + Фитнес</h3>
+                <div class="team_img">
+                    <img src="../img/price/1.png" alt="">
+                </div>
+                <p class="role">Безлимитная карта</p>
+                <p>Абонемент действует на 3 месяца<br>(1 месяц заморозки)</p>
+                <h3>Цена: 3000 руб.</h3>
+
+            </div>    
+            <div class="team_member">
+                <h3>Карта тренажерный зал + Фитнес</h3>
+                <div class="team_img">
+                    <img src="../img/price/2.png" alt="">
+                </div>
+                <p class="role">Безлимитная карта</p>
+                <p>Абонемент действует на 6 месяцев<br>(1 месяц заморозки)</p>
+                <h3>Цена: 4500 руб.</h3>
+            </div>    
+            <div class="team_member">
+                <h3>Карта тренажерный зал + Фитнес</h3>
+                <div class="team_img">
+                    <img src="../img/price/3.png" alt="">
+                </div>
+                <p class="role">Безлимитная карта</p>
+                <p>Абонемент действует на 9 месяцев<br>(1 месяц заморозки)</p>
+                <h3>Цена: 5800 руб.</h3>
+            </div>              
+        </div>
+        <div class="team">
+            <div class="team_member">
+                <h3>Карта тренажерный зал + Фитнес</h3>
+                <div class="team_img">
+                    <img src="../img/price/4.png" alt="">
+                </div>
+                <p class="role">Безлимитная карта</p>
+                <p>Абонемент действует на 12 месяцев<br> (1 месяц заморозки)</p>
+                <h3>Цена: 6300 руб.</h3>
+            </div>    
+            <div class="team_member">
+                <h3>Карта тренажерный зал + Фитнес</h3>
+                <div class="team_img">
+                    <img src="../img/price/5.png" alt="">
+                </div>
+                <p class="role">Безлимитная карта</p>
+                <p>Абонемент действует на 6 месяцев (без заморозки)</p>
+                <h3>Цена: 4000 руб.</h3>
+            </div>    
+            <div class="team_member">
+                <h3>Карта тренажерный зал + Фитнес</h3>
+                <div class="team_img">
+                    <img src="../img/price/6.png" alt="">
+                </div>
+                <p class="role">Безлимитная карта</p>
+                <p>Абонемент действует на 12 месяцев (без заморозки)</p>
+                <h3>Цена: 6000 руб.</h3>
+            </div>               
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="club.html">Клубы</a>
+            <a href="schedule.html">Расписание</a>
+            <a href="prices.html">Цены</a>
+            <a href="team.html">Команда</a>
+            <a href="about.html">О нас</a>
+        </nav>
+        <div class="footer-logo">
+            <a href="index.html"><img src="../img/logo.png"></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="../img/social/inst.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/vk.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/tg.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/wp.png" height="40px" width="40px"></a>
+        </div>
+        <p>© Все права защищены ООО "FitHell" 2012</p>
+    </footer>
+</body>
+</html>

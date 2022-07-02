@@ -1,0 +1,100 @@
+@media (max-width: 1360px){
+    .container{
+        grid-template-columns: 1fr 5fr 2fr;
+    }
+    .header{
+        grid-template-rows: 1fr 1fr 7fr;
+        &-nav{
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        &-logo{
+            grid-column: 2/3;
+            justify-self: start;
+        }
+        &-contacts{
+            grid-column: 2/3;
+            justify-self: center;
+        }
+        &-text{
+            grid-row: 3/4;
+        }
+    }
+    .about-row{
+        grid-template-columns: repeat(auto-fill,minmax(10%,max-content));
+    }
+}
+@media (max-width: 992px){
+    .container{
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+    .header{
+        grid-template-rows: 1fr 0.5fr 0.7fr 10fr;
+        &-contacts{
+            grid-row: 2/3;
+            justify-self: start;
+        }
+        &-nav{
+            grid-row: 3/4;
+        }
+        &-text{
+            grid-row: 4/5;
+            grid-row-gap: 40px;
+        }
+        &-title{
+            font-size: 36px;
+        }
+        &-subtitle{
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .about-row{
+        grid-template-columns: repeat(auto-fill,minmax(25%,max-content));
+    }
+}
+@media (max-width: 768px){
+    .header{
+        font-size: 16px;
+        &-nav{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+        &-buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &-buttons__link{
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+@media (max-width: 567px){
+    .container{
+        grid-template-columns: repeat(auto);
+    }
+    .header{
+        grid-template-rows: 0.7fr 0.5fr 1fr 6fr;
+        &-nav{
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+        }
+        &-img{
+            width: 300px;
+        }
+    }
+    .section{
+        &-title{
+            font-size: 36px;;
+        }
+        &-description{
+            font-size: 18px;
+        }
+    }
+    .about-row{
+        grid-template-columns: repeat(auto-fill,minmax(100%,max-content));
+    }
+}

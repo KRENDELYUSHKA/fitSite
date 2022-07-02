@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHell</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="scss/style.css">
+    </link>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="circle circle_small"></div>
+        <div class="circle circle_big"></div>
+        <img class="header-img" src="img/girl.png">
+        <a href="index.html" class="header-logo">
+            <img src="img/logo.png" height="80px" width="150px">
+        </a>
+        <nav class="header-nav">
+            <a href="html/club.html" class="header-nav__link">Клубы</a>
+            <a href="html/schedule.html" class="header-nav__link">Расписание</a>
+            <a href="html/prices.html" class="header-nav__link">Цены</a>
+            <a href="html/team.html" class="header-nav__link">Команда</a>
+            <a href="html/about.html" class="header-nav__link">О нас</a>
+        </nav>
+        <div class="header-contacts">
+            <a href="#" class="header-contacts__link header-contacts__phone">8 800 123-45-67</a>
+            <a href="index.html" class="header-contacts__link header-contacts__callback" id="open_pop_up_phone">Заказать
+                звонок</a>
+        </div>
+        <div class="pop_up_phone" id="pop_up_phone">
+            <div class="pop_up_phone_container">
+                <div class="pop_up_phone_body" id="pop_up_phone_body">
+                    <p>Заказать звонок</p>
+                    <form method="POST">
+                        <input type="text" placeholder="ФИО" name="fullName_us">
+                        <input type="text" placeholder="Телефон" name="phone_us">
+                        <button name="go_us">Заказать звонок</button>
+                    </form>
+                    <div class="pop_up_phone_close" id="pop_up_phone_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <div class="header-text">
+            <h1 class="header-title">Проведем вам<br>лучшую тренировку!</h1>
+            <span class="header-subtitle">Подберем для вас индивидуальную программу<br>и сделаем результат.</span>
+            <div class="header-buttons">
+                <a href="#" class="button" id="open_pop_up">Купить абонемент</a>
+                <a href="/html/prices.html" class="link header-buttons__link">Узнать больше</a>
+            </div>
+            <div class="pop_up" id="pop_up">
+                <div class="pop_up_container">
+                    <div class="pop_up_body">
+                            <p>Регистрация</p>
+                            <input type="text" placeholder="Телефон" name="phone">
+                            <input type="text" placeholder="ФИО" name="fullName">
+                            <input type="password" placeholder="Пароль" name="pass">
+                            <a type="submit" class="button-reg">Регистрация</a>
+                            <a href="#" id="open_pop_up_a" class="button-auth">Авторизация</a>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_up" id="pop_up_a">
+                <div class="pop_up_container">
+                    <div class="pop_up_body">
+                            <p>Авторизация</p>
+                            <input type="text" placeholder="Телефон" name="phoneA">
+                            <input type="password" placeholder="Пароль" name="passA">
+                            <a type="submit" class="button-reg">Авторизация</a>
+                            <a href="#" id="open_pop_up_reg" class="button-auth">Регистрация</a>
+                            <div class="pop_up_close" id="pop_up_close_a">&#10006</div>
+                    </div>
+                </div>
+            </div>
+            <script src="../js/main.js"></script>
+        </div>
+    </header>
+    <section class="section about">
+        <div class="container">
+            <h2 class="section-title">Кто мы такие?</h2>
+            <p class="section-description">
+                FitHell — это крупнейшая сеть фитнес-клубов России.
+                Мы никогда не останавливаемся в развитии и стремимся добиваться успеха,
+                как в спорте, так и в жизни. Мы искренне верим, что честные, порядочные и
+                амбициозные люди, способны делать мир вокруг себя лучше.
+            </p>
+            <div class="about-row">
+                <div class="about-col">
+                    <img src="img/about/1.png" alt="10 лет работы"" class=" about__image">
+                    <h3 class="about__title">10+</h3>
+                    <span class="about__text">лет работы</span>
+                </div>
+                <div class="about-col">
+                    <img src="img/about/2.png" alt="50 различных кардио-тренажеров" class="about__image">
+                    <h3 class="about__title">50</h3>
+                    <span class="about__text">кардио тренажеров</span>
+                </div>
+                <div class="about-col">
+                    <img src="img/about/3.png" alt="100 видов силовых тренажеров" class="about__image">
+                    <h3 class="about__title">100</h3>
+                    <span class="about__text">силовых тренажеров</span>
+                </div>
+                <div class="about-col">
+                    <img src="img/about/4.png" alt="1000+ довольных клиентов" class="about__image">
+                    <h3 class="about__title">1000+</h3>
+                    <span class="about__text">довольных клиентов</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="#">Клубы</a>
+            <a href="#">Расписание</a>
+            <a href="#">Цены</a>
+            <a href="#">Команда</a>
+            <a href="#">О нас</a>
+        </nav>
+        <div class="footer-logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="img/social/inst.png" height="40px" width="40px"></a>
+            <a href="#"><img src="img/social/vk.png" height="40px" width="40px"></a>
+            <a href="#"><img src="img/social/tg.png" height="40px" width="40px"></a>
+            <a href="#"><img src="img/social/wp.png" height="40px" width="40px"></a>
+        </div>
+        <p>© Все права защищены ООО "FitHell" 2012</p>
+    </footer>
+</body>
+
+</html>

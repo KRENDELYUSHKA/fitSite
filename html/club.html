@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHell</title>
+    <link rel="stylesheet" href="../scss/club.css"></link>
+</head>
+<body>
+    <header class="header container">
+        <div class="circle circle_small"></div>
+        <div class="circle circle_big"></div>
+        <a href="../index.html" class="header-logo">
+            <img src="../img/logo.png" height="80px" width="150px">
+        </a>
+        <nav class="header-nav">
+            <a href="club.html" class="header-nav__link">Клубы</a>
+            <a href="schedule.html" class="header-nav__link">Расписание</a>
+            <a href="prices.html" class="header-nav__link">Цены</a>
+            <a href="team.html" class="header-nav__link">Команда</a>
+            <a href="about.html" class="header-nav__link">О нас</a>
+        </nav>
+        <div class="header-contacts">
+            <a href="#" class="header-contacts__link header-contacts__phone">8 800 123-45-67</a>
+            <a href="#" class="header-contacts__link header-contacts__callback" id="open_pop_up_phone">Заказать звонок</a>
+        </div>
+        <div class="pop_up_phone" id="pop_up_phone">
+            <div class="pop_up_phone_container">
+                <div class="pop_up_phone_body" id="pop_up_phone_body">
+                    <p>Заказать звонок</p>
+                    <form method="POST">
+                        <input type="text" placeholder="ФИО" name="fullName_us">
+                        <input type="text" placeholder="Телефон" name="phone_us">
+                        <button name="go_us">Заказать звонок</button>
+                    </form>
+                    <div class="pop_up_phone_close" id="pop_up_phone_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/about.js"></script>
+    </header>
+    <section class="schedule">
+        <h2 class="section-title">Фитнес-клубы FitHell в Пензе</h2>
+        <div class="main">
+            <img src="../img/club/1.png" alt="">
+            <div class="schedule-text">
+                <h1>ТЦ Высшая лига</h1>
+                <p>г. Пенза, ул. Московская 37, ТРЦ «Высшая лига», 5 этаж.<br> тел.: +7 (8412) 988-801</p>
+                <p><a href="schedule.html">Посмотреть расписание</a></p>
+                <a href="#" class="button">Купить абонемент</a>
+                <a href="about.html" class="link_club">О клубе</a>
+            </div>
+        </div>
+        <div class="main">
+            <img src="../img/club/2.png" alt="">
+            <div class="schedule-text">
+                <h1>ТЦ Онежский</h1>
+                <p>г. Пенза, 1-й Онежский пр-д, 4, 2 этаж.<br> тел.: +7 (8412) 988-801</p>
+                <p><a href="schedule.html">Посмотреть расписание</a></p>
+                <a href="#" class="button">Купить абонемент</a>
+                <a href="about.html" class="link_club">О клубе</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="club.html">Клубы</a>
+            <a href="schedule.html">Расписание</a>
+            <a href="prices.html">Цены</a>
+            <a href="team.html">Команда</a>
+            <a href="about.html">О нас</a>
+        </nav>
+        <div class="footer-logo">
+            <a href="index.html"><img src="../img/logo.png"></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="../img/social/inst.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/vk.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/tg.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/wp.png" height="40px" width="40px"></a>
+        </div>
+        <p>© Все права защищены ООО "FitHell" 2012</p>
+    </footer>
+</body>
+</html>

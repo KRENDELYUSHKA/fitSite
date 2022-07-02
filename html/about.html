@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHell</title>
+    <link rel="stylesheet" href="../scss/about.css"></link>
+</head>
+<body>
+    <header class="header container">
+        <div class="circle circle_small"></div>
+        <a href="../index.html" class="header-logo">
+            <img src="../img/logo.png" height="80px" width="150px">
+        </a>
+        <nav class="header-nav">
+            <a href="club.html" class="header-nav__link">Клубы</a>
+            <a href="schedule.html" class="header-nav__link">Расписание</a>
+            <a href="prices.html" class="header-nav__link">Цены</a>
+            <a href="team.html" class="header-nav__link">Команда</a>
+            <a href="about.html" class="header-nav__link">О нас</a>
+        </nav>
+        <div class="header-contacts">
+            <a href="#" class="header-contacts__link header-contacts__phone">8 800 123-45-67</a>
+            <a href="#" class="header-contacts__link header-contacts__callback" id="open_pop_up_phone">Заказать звонок</a>
+        </div>
+        <div class="pop_up_phone" id="pop_up_phone">
+            <div class="pop_up_phone_container">
+                <div class="pop_up_phone_body" id="pop_up_phone_body">
+                    <p>Заказать звонок</p>
+                    <form method="POST">
+                        <input type="text" placeholder="ФИО" name="fullName_us">
+                        <input type="text" placeholder="Телефон" name="phone_us">
+                        <button name="go_us">Заказать звонок</button>
+                    </form>
+                    <div class="pop_up_phone_close" id="pop_up_phone_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/about.js"></script>
+    </header>
+    <section class="section about">
+        <div class="container">
+            <h2 class="section-title">О нас</h2>
+            <p class="section-description">
+                FitHell — это крупнейшая сеть фитнес-клубов России. 
+                Мы никогда не останавливаемся в развитии и стремимся добиваться успеха, 
+                как в спорте, так и в жизни. Мы искренне верим, что честные, порядочные и 
+                амбициозные люди, способны делать мир вокруг себя лучше.
+            </p>
+            <div class="about-row">
+                <div class="about-col">
+                    <img src="../img/about/1.png" alt="10 лет работы"" class="about__image">
+                    <h3 class="about__title">10+</h3>
+                    <span class="about__text">лет работы</span>
+                </div>
+                <div class="about-col">
+                    <img src="../img/about/2.png" alt="50 различных кардио-тренажеров" class="about__image">
+                    <h3 class="about__title">50</h3>
+                    <span class="about__text">кардио тренажеров</span>
+                </div>
+                <div class="about-col">
+                    <img src="../img/about/3.png" alt="100 видов силовых тренажеров" class="about__image">
+                    <h3 class="about__title">100</h3>
+                    <span class="about__text">силовых тренажеров</span>
+                </div>
+                <div class="about-col">
+                    <img src="../img/about/4.png" alt="1000+ довольных клиентов" class="about__image">
+                    <h3 class="about__title">1000+</h3>
+                    <span class="about__text">довольных клиентов</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <div class="contacts_info">
+            <div class="address_info">
+                <h1>FitHell Высшая лига</h1>
+                <p>+7 (8412) 988-801<br>fitHell@gmail.com<br>ул. Московская 37, ТРЦ «Высшая лига», 5 этаж.</p>
+                <h4>График работы:</h4>
+                <p>пн-пт с 7.00 - 22.00<br>сб-вс с 8.00 - 21.00</p>
+            </div>
+            <div class="graphic_info">
+                <h1>FitHell Онежский</h1>
+                <p>+7 (8412) 988-801<br>fitHell@gmail.com<br>1-й Онежский пр-д, 4, 2 этаж.</p>
+                <h4>График работы:</h4>
+                <p>пн-пт с 8.00 - 23.00<br>сб-вс с 9.00 - 22.00</p>
+            </div>
+        </div>
+    </div>
+    <section class="map">
+        <div class="container_map_one">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.5268658648038!2d45.01462111572394!3d53.19046667994666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4141015a5c86b043%3A0xa63cf8e97555d938!2z0JLRi9GB0YjQsNGPINC70LjQs9Cw!5e0!3m2!1sru!2sru!4v1656762170040!5m2!1sru!2sru" width="500px" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map_one"></iframe>
+        </div>
+        <div class="container_map_two">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.9456588953576!2d44.94099294333886!3d53.21882268582425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414101843cc295ff%3A0x8da373d66e09714a!2z0J7QvdC10LbRgdC60LjQuQ!5e0!3m2!1sru!2sru!4v1656756016838!5m2!1sru!2sru" width="500px" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map_two"></iframe>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="club.html">Клубы</a>
+            <a href="schedule.html">Расписание</a>
+            <a href="prices.html">Цены</a>
+            <a href="team.html">Команда</a>
+            <a href="about.html">О нас</a>
+        </nav>
+        <div class="footer-logo">
+            <a href="index.html"><img src="../img/logo.png"></a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="../img/social/inst.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/vk.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/tg.png" height="40px" width="40px"></a>
+            <a href="#"><img src="../img/social/wp.png" height="40px" width="40px"></a>
+        </div>
+        <p>© Все права защищены ООО "FitHell" 2012</p>
+    </footer>
+  </body>
+</html>

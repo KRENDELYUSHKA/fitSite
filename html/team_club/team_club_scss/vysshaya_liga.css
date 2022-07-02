@@ -1,0 +1,348 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.link {
+  color: #ff591f;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.button {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #ff591f;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 35px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 10px 40px rgba(255, 89, 31, 0.35), 0 9px 46px rgba(255, 89, 31, 0.56);
+          box-shadow: 0 10px 40px rgba(255, 89, 31, 0.35), 0 9px 46px rgba(255, 89, 31, 0.56);
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #ffc30d;
+  position: absolute;
+}
+
+.circle_small {
+  left: -30px;
+  top: -40px;
+  width: 180px;
+  height: 180px;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr 3fr;
+      grid-template-columns: 2fr 5fr 3fr;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr 3fr;
+      grid-template-columns: 2fr 5fr 3fr;
+  -ms-grid-rows: 2fr 0.1fr;
+      grid-template-rows: 2fr 0.1fr;
+  grid-column-gap: 20px;
+  height: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff5cf;
+  font-size: 18px;
+}
+
+.header-logo, .header-nav, .header-contacts {
+  position: relative;
+}
+
+.header-logo {
+  grid-area: header-logo;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.header-nav {
+  grid-area: header-nav;
+  position: relative;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.header-nav__link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-nav__link:last-child {
+  margin-right: 0;
+}
+
+.header-contacts {
+  grid-area: header-contacts;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.header-contacts__link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.header-contacts__phone {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.header-contacts__callback {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.header-contacts__callback:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.pop_up_phone {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 2;
+  -webkit-transform: translateY(-44.5%) scale(0);
+          transform: translateY(-44.5%) scale(0);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.pop_up_phone_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pop_up_phone_body {
+  margin: auto;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 15px 110px 15px;
+  position: relative;
+}
+
+.pop_up_phone_body p {
+  font-size: 28px;
+  font-weight: 600;
+  color: #22262d;
+  margin-bottom: 40px;
+}
+
+.pop_up_phone_body input {
+  display: block;
+  margin: 25px auto 0px auto;
+  width: 330px;
+  padding: 17px 20px;
+  background-color: #dadada;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+.pop_up_phone_body :focus {
+  outline: none;
+}
+
+.pop_up_phone_body button {
+  cursor: pointer;
+  display: block;
+  width: 330px;
+  margin: 60px auto 0px auto;
+  padding: 20px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #ff591f;
+  margin-bottom: 10px;
+}
+
+.pop_up_phone_body a {
+  color: #ff591f;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.pop_up_phone_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.pop_up_phone.active {
+  -webkit-transform: translateY(0%) scale(100%);
+          transform: translateY(0%) scale(100%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper h1 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin-left: 300px;
+}
+
+.wrapper .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  text-align: center;
+  margin-left: 180px;
+}
+
+.wrapper .team_member {
+  background: #fff5cf;
+  margin: 5px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  width: 450px;
+  padding: 20px;
+  line-height: 20px;
+  position: relative;
+}
+
+.wrapper .team_member h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.wrapper .team_member .role {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+
+.wrapper .team_member .role-info {
+  text-align: left;
+}
+
+.wrapper .team_member .check-text {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.wrapper .team_member .check-text li:before {
+  content: '✓';
+  color: #ff591f;
+  font-size: 26px;
+}
+
+.wrapper .team_member .team_img img {
+  height: 200px;
+  width: 220px;
+}
+
+.wrapper .team_member .button {
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  width: 170px;
+  text-decoration: none;
+  background-color: #ff591f;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 10px 40px rgba(255, 89, 31, 0.35), 0 9px 46px rgba(255, 89, 31, 0.46);
+          box-shadow: 0 10px 40px rgba(255, 89, 31, 0.35), 0 9px 46px rgba(255, 89, 31, 0.46);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #fff5cf;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: #000;
+  font-size: 14px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.social img {
+  margin-left: 10px;
+}
+
+.social img:hover {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=vysshaya_liga.css.map */
